@@ -2,23 +2,23 @@ import Fighter from '../Fighter';
 import Battle from './Battle';
 
 export default class PVP extends Battle {
+  private _player1: Fighter;
   private _player2: Fighter;
   constructor(
     player1:Fighter,
     player2: Fighter,
   ) {
-    // const player = super(player1);
     super(player1);
+    this._player1 = player1;
     this._player2 = player2;
-    // super.fight();
   }
 
   fight(): number {
-    // while (this.player.lifePoints > 0) {
-    this.player.attack(this._player2);
-    // this._player2.attack(this.player);
-    console.log(this.player.lifePoints, this._player2.lifePoints);
-    // }
-    return this.player.lifePoints;
+    while (this._player1.lifePoints !== -1 && this._player2.lifePoints !== -1) {
+      this._player1.attack(this._player2);
+      this._player2.attack(this._player1);
+      // console.log(this._player1.lifePoints, this._player2.lifePoints);
+    }
+    return super.fight();
   }
 }
