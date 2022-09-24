@@ -4,7 +4,7 @@
 Esse Projeto se baseia num jogo de RPG de mesa (Dungeons and Dragons) e teve como objetivo, consolidar os conhecimentos sobre POO, Typescript e SOLID aprendidos ao final do modulo de POO na [Trybe](https://app.betrybe.com/). 
 
 ## :man_technologist: Tecnologias, bibliotecas e arquiteturas usadas
-  * __Node.js__ | [Compilador]
+  * __Node.js__ | 
   * __Typescript__ | [Tipagem de variáveis]
   * __POO__ | [Programação Orientada a Objetos]
   * __SOLID__ | [Princípios de design de código orientado a objeto]
